@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайт відьми</title>
-    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="main.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,37 +32,128 @@
     <section id="about">
         <div class="container">
             <h2>Про себе</h2>
-            <p>Я — відьма Хлоя, майстриня темних мистецтв і магії в стилі стімпанк. Моя мета — допомогти тим, хто шукає
-                істинного знання та магії в повсякденному житті.</p>
-        </div>
+            <p>Я — Хлоя, відьма, що відкриває для вас магію. Моя місія — допомогти кожному знайти гармонію у житті за допомогою магічних знань і сили природи.</p>
+                <blockquote>“Магія — це не таємниця, а майстерність розуміння світу.”</blockquote>
+            </div>
     </section>
 
     <section id="services">
         <div class="container">
             <h2>Послуги</h2>
-            <p>Я пропоную магічні послуги для тих, хто хоче відкрити для себе таємниці світу. Здійснюю ритуали, магічні
-                обряди та консультації з практичної магії.</p>
+            <p>Магія не має меж, і я готова поділитись з вами різноманітними магічними практиками, які допоможуть відкрити нові горизонти у вашому житті. Ось деякі з моїх послуг:</p>
+            
+            <div class="services__list">
+                <div class="service">
+                    <img src="taro.png" alt="Гадання на Таро" class="service__img">
+                    <h3>Гадання на Таро</h3>
+                    <p>Розкрию ваші шляхи та можливості за допомогою древніх карт. Таро не просто дають відповіді — вони допомагають вам зрозуміти ваші справжні бажання і потреби.</p>
+                    <button class="btn">Дізнатись більше</button>
+                </div>
+                <div class="service">
+                    <img src="ritual.webp" alt="Ритуали очищення" class="service__img">
+                    <h3>Ритуали очищення</h3>
+                    <p>Очистіть свою енергію від негативу та знайдіть спокій. Після очищення ви будете відчувати легкість і гармонію у своєму житті.</p>
+                    <button class="btn">Дізнатись більше</button>
+                </div>
+                <div class="service">
+                    <img src="amulet.avif" alt="Захисні амулети" class="service__img">
+                    <h3>Захисні амулети</h3>
+                    <p>Амулети ручної роботи для захисту та підтримки вашої енергетики. Підходять для людей, які шукають захист від негативу.</p>
+                    <button class="btn">Дізнатись більше</button>
+                </div>
+                <div class="service">
+                    <img src="3.png" alt="Заклинання любові" class="service__img">
+                    <h3>Заклинання любові</h3>
+                    <p>Магічні обряди для залучення справжньої любові. Вони допомагають розкрити серце і побудувати гармонійні стосунки.</p>
+                    <button class="btn">Дізнатись більше</button>
+                </div>
+                <div class="service">
+                    <img src="drugs.jpg" alt="Духовне лікування" class="service__img">
+                    <h3>Духовне лікування</h3>
+                    <p>Поглиблене лікування на рівні душі та тіла. Відновлюємо баланс енергії та допомагаємо знайти внутрішній спокій.</p>
+                    <button class="btn">Дізнатись більше</button>
+                </div>
+                <div class="service">
+                    <img src="defense.webp" alt="Магія захисту" class="service__img">
+                    <h3>Магія захисту</h3>
+                    <p>Магічні ритуали для захисту вашого житла, родини та енергетичного поля. Забезпечте себе від будь-яких зовнішніх впливів і негативу.</p>
+                    <button class="btn">Дізнатись більше</button>
+                </div>
+            </div>
         </div>
     </section>
+    
 
     <section id="shop">
         <div class="container">
             <h2>Крамниця</h2>
-            <p>У моїй крамниці ви знайдете чарівні амулети, інструменти для ритуалів та інші магічні аксесуари.</p>
+            <div class="shop__items">
+                <div class="shop__item">
+                    <div class="shop__content">
+                        <img src="amulet.png" alt="Амулет">
+                        <h3>Амулет на удачу</h3>
+                        <p>500 грн</p>
+                        <button class="btn">Додати до кошика</button>
+                    </div>
+                </div>
+                <div class="shop__item">
+                    <div class="shop__content">
+                        <img src="1.png" alt="Магічний котел">
+                        <h3>Магічний котел</h3>
+                        <p>300 грн</p>
+                        <button class="btn">Додати до кошика</button>
+                    </div>
+                </div>
+                <div class="shop__item">
+                    <div class="shop__content">
+                        <img src="2.png" alt="Зілля">
+                        <h3>Зілля сили</h3>
+                        <p>200 грн</p>
+                        <button class="btn">Додати до кошика</button>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </section>
 
     <section id="reviews">
         <div class="container">
-            <h2>Відгуки</h2>
-            <p>Тут ви можете почитати відгуки клієнтів, які скористались моїми послугами та відчули силу магії.</p>
+            <h2>Відгуки клієнтів</h2>
+            <div class="reviews__list">
+                <blockquote class="review">
+                    <p>“Дякую за гадання! Все збулося, і я знайшла свій шлях. Таро допомогло мені зрозуміти, чого я хочу від життя.”</p>
+                    <footer>— Ольга</footer>
+                </blockquote>
+    
+                <blockquote class="review">
+                    <p>“Амулет врятував мене від багатьох негараздів. Після того, як я почала носити його, я відчула себе більш захищеною і спокійною.”</p>
+                    <footer>— Дмитро</footer>
+                </blockquote>
+    
+                <blockquote class="review">
+                    <p>“Після ритуалу очищення я відчула, як енергія наповнює моє тіло, а всі негативні емоції залишають мене. Це було неймовірно.”</p>
+                    <footer>— Наталія</footer>
+                </blockquote>
+    
+                <blockquote class="review">
+                    <p>“Гадання на Таро допомогло мені зрозуміти, чого я насправді хочу, і я почала діяти з новою впевненістю. Дякую, Хлоє!”</p>
+                    <footer>— Ірина</footer>
+                </blockquote>
+    
+                <blockquote class="review">
+                    <p>“Ритуали очищення дійсно змінюють стан душі. Я відчула велику полегшення і спокій після кожної практики.”</p>
+                    <footer>— Олена</footer>
+                </blockquote>
+            </div>
         </div>
     </section>
+    
 
     <section id="gallery">
         <div class="container">
             <h2>Галерея</h2>
-            <p>Ознайомтесь з моєю галереєю магічних об'єктів і вражень з ритуалів.</p>
+            
         </div>
     </section>
 
