@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайт відьми</title>
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/services.css">
+    <link rel="stylesheet" href="style/reviews.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/footer.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Great+Vibes&family=Pacifico&family=Prosto+One&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap"
         rel="stylesheet">
 
 </head>
@@ -38,11 +42,80 @@
     </section>
 
     <section id="services">
-        <div class="container">
-            <h2>Послуги</h2>
-            <p>Я пропоную магічні послуги для тих, хто хоче відкрити для себе таємниці світу. Здійснюю ритуали, магічні
-                обряди та консультації з практичної магії.</p>
+        <h2 class="services__header">
+            Послуги
+        </h2>
+        <div class="servicer__wrap">
+            <div class="service-card">
+                <div class="service-card__title">Додатковий день у тижні</div>
+                <div class="service-card__description">
+                    Додатковий час для повного відпочинку або завершення проекту. Відчуття суботи забезпечено!
+                </div>
+                <div class="service-card__price">Ціна: 30 грн</div>
+                <div class="service-card__extra">
+                    Тривалість дії: тільки один раз — для збереження магічної сили.
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-card__title">Додатковий день у тижні</div>
+                <div class="service-card__description">
+                    Додатковий час для повного відпочинку або завершення проекту. Відчуття суботи забезпечено!
+                </div>
+                <div class="service-card__price">Ціна: 30 грн</div>
+                <div class="service-card__extra">
+                    Тривалість дії: тільки один раз — для збереження магічної сили.
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-card__title">Додатковий день у тижні</div>
+                <div class="service-card__description">
+                    Додатковий час для повного відпочинку або завершення проекту. Відчуття суботи забезпечено!
+                </div>
+                <div class="service-card__price">Ціна: 30 грн</div>
+                <div class="service-card__extra">
+                    Тривалість дії: тільки один раз — для збереження магічної сили.
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-card__title">Сила встати на першу пару</div>
+                <div class="service-card__description">
+                    Дарує здатність прокинутися з першого дзвінка будильника і навіть встигнути зібратися на першу пару.
+                    Ідеальний ритуал для тих, хто часто «прокидається» тільки на обідній перерві.
+                </div>
+                <div class="service-card__price">Ціна: 30 грн</div>
+                <div class="service-card__extra">
+                    Тривалість дії: тільки один раз — для збереження магічної сили.
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-card__title">Закляття на швидке вивчення конспектів</div>
+                <div class="service-card__description">
+                    Чарівне заклинання, яке дає змогу осягнути зміст конспектів, навіть якщо ви вперше їх бачите.
+                    Ідеально для тих, хто забув відкрити підручник до екзамену!
+                </div>
+                <div class="service-card__price">Ціна: 40 грн</div>
+                <div class="service-card__extra">
+                    Тривалість дії: до кінця екзамену, або поки не зададуть питання за межами конспекту.
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-card__title">Зілля для безсонної ночі</div>
+                <div class="service-card__description">
+                    Спеціальний відьомський напій, який допомагає не заснути протягом цілої ночі, якщо до дедлайну
+                    залишилися лічені години. Дає ясність думки і бадьорість, навіть коли кави вже не вистачає.
+                </div>
+                <div class="service-card__price">Ціна: 60 грн</div>
+                <div class="service-card__extra">
+                    Побічний ефект: нестримне бажання завершити все на світі, але тільки до першого ранкового променя
+                    сонця.
+                </div>
+            </div>
         </div>
+
     </section>
 
     <section id="shop">
@@ -53,9 +126,47 @@
     </section>
 
     <section id="reviews">
-        <div class="container">
-            <h2>Відгуки</h2>
-            <p>Тут ви можете почитати відгуки клієнтів, які скористались моїми послугами та відчули силу магії.</p>
+        <div class="review-card">
+            <div class="review-card__title">Політ на ступці</div>
+            <div class="review-card__content">
+                "Цей політ був настільки швидким, що я встигла написати курсову, погладити кота і навіть подивитися пару
+                серіалів! Правда, вранці пам'ятала тільки заголовок роботи, але Хлоя обіцяла, що все буде гаразд. І
+                справді, все було чудово!"
+            </div>
+            <div class="review-card__author">Анна, студентка 3 курсу</div>
+            <div class="review-card__date">1 листопада 2024</div>
+        </div>
+
+        <div class="review-card">
+            <div class="review-card__title">Сила встати на першу пару</div>
+            <div class="review-card__content">
+                "Ніколи не думала, що буду встигати на першу пару без підйому з-під ковдри за кілька хвилин до кінця
+                заняття. Чашка кави не допомагала, але після заклинання від Хлої я прокинулась, як нова людина. Тепер
+                встигала навіть на перший сніданок!"
+            </div>
+            <div class="review-card__author">Максим, студент першого курсу</div>
+            <div class="review-card__date">15 листопада 2024</div>
+        </div>
+
+        <div class="review-card">
+            <div class="review-card__title">Закляття на швидке вивчення конспектів</div>
+            <div class="review-card__content">
+                "Це чудо закляття! Усього за 15 хвилин я зміг запам'ятати весь конспект! Щоправда, не пам'ятаю, як це
+                зробив, але на екзамені все пішло як по маслу. Дякую, Хлоє, тепер я вірю в магію!"
+            </div>
+            <div class="review-card__author">Олена, студентка 4 курсу</div>
+            <div class="review-card__date">17 листопада 2024</div>
+        </div>
+
+        <div class="review-card">
+            <div class="review-card__title">Зілля для безсонної ночі</div>
+            <div class="review-card__content">
+                "Ніч перед дедлайном з цим зіллям стала просто фантастичною. Замість того, щоб падати на клавіатуру
+                після третьої чашки кави, я чітко продумувала кожне речення курсової роботи. Правда, на ранок я не
+                пам'ятала, як я завершила перший розділ, але це дрібниці!"
+            </div>
+            <div class="review-card__author">Ігор, магістрант</div>
+            <div class="review-card__date">20 листопада 2024</div>
         </div>
     </section>
 
@@ -87,18 +198,18 @@
                 <h3 class="footer__title">Наші партнери</h3>
                 <ul class="footer__list">
                     <li class="footer__list-item"><a class="footer__link" href="https://www.partner1.com"
-                            target="_blank">Партнер 1</a></li>
+                            target="_blank">Асоціація відьом підприємців</a></li>
                     <li class="footer__list-item"><a class="footer__link" href="https://www.partner2.com"
-                            target="_blank">Партнер 2</a></li>
+                            target="_blank">Асоціація анонімних відьм</a></li>
                     <li class="footer__list-item"><a class="footer__link" href="https://www.partner3.com"
-                            target="_blank">Партнер 3</a></li>
+                            target="_blank">Асоціація з боротьби з чорною магією</a></li>
                 </ul>
             </div>
 
             <div class="footer__section footer__section--subscribe">
                 <h3 class="footer__title">Підпишіться на новини</h3>
                 <form class="footer__form" action="#" method="POST">
-                    <input class="footer__input" type="email" placeholder="Ваш Email" />
+                <input class="footer__input" type="email" placeholder="Ваш Email" /> <br>
                     <button class="footer__button" type="submit">Підписатися</button>
                 </form>
             </div>
