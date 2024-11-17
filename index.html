@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайт відьми</title>
     <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/main2.css">
+    <link rel="stylesheet" href="style/shop.css">
     <link rel="stylesheet" href="style/services.css">
+    <link rel="stylesheet" href="style/services2.css">
+    <link rel="stylesheet" href="style/galary.css">
     <link rel="stylesheet" href="style/about.css">
     <link rel="stylesheet" href="style/reviews.css">
     <link rel="stylesheet" href="style/header.css">
@@ -176,6 +178,7 @@
 
     </section>
 
+    <section id="services_2">
     <div class="container">
         <h2>Послуги</h2>
         <p>Магія не має меж, і я готова поділитись з вами різноманітними магічними практиками, які допоможуть відкрити
@@ -210,8 +213,8 @@
                     гармонійні стосунки.</p>
                 <button class="btn">Дізнатись більше</button>
             </div>
-            <div class="img/service">
-                <img src="drugs.jpg" alt="Духовне лікування" class="service__img">
+            <div class="service">
+                <img src="img/drugs.jpg" alt="Духовне лікування" class="service__img">
                 <h3>Духовне лікування</h3>
                 <p>Поглиблене лікування на рівні душі та тіла. Відновлюємо баланс енергії та допомагаємо знайти
                     внутрішній спокій.</p>
@@ -226,76 +229,167 @@
             </div>
         </div>
     </div>
+</section>
 
-    <section id="shop">
-        <div class="container">
-            <h2>Крамниця</h2>
-            <div class="shop__items">
-                <div class="shop__item">
-                    <div class="shop__content">
-                        <img src="img/amulet.png" alt="Амулет">
-                        <h3>Амулет на удачу</h3>
-                        <p>500 грн</p>
-                        <button class="btn">Додати до кошика</button>
-                    </div>
-                </div>
-                <div class="shop__item">
-                    <div class="shop__content">
-                        <img src="img/1.png" alt="Магічний котел">
-                        <h3>Магічний котел</h3>
-                        <p>300 грн</p>
-                        <button class="btn">Додати до кошика</button>
-                    </div>
-                </div>
-                <div class="shop__item">
-                    <div class="shop__content">
-                        <img src="img/2.png" alt="Зілля">
-                        <h3>Зілля сили</h3>
-                        <p>200 грн</p>
-                        <button class="btn">Додати до кошика</button>
-                    </div>
+<section id="shop">
+    <div class="container">
+        <h2 class="shop__header">Крамниця</h2>
+        <div class="shop__items">
+            <div class="shop__item">
+                <div class="shop__content">
+                    <img src="img/amulet.png" alt="Амулет" class="shop__image">
+                    <h3>Амулет на удачу</h3>
+                    <p>500 грн</p>
+                    <button class="btn">Додати до кошика</button>
                 </div>
             </div>
 
+            <div class="shop__item">
+                <div class="shop__content">
+                    <img src="img/1.png" alt="Магічний котел" class="shop__image">
+                    <h3>Магічний котел</h3>
+                    <p>300 грн</p>
+                    <button class="btn">Додати до кошика</button>
+                </div>
+            </div>
+
+            <div class="shop__item">
+                <div class="shop__content">
+                    <img src="img/2.png" alt="Зілля" class="shop__image">
+                    <h3>Зілля сили</h3>
+                    <p>200 грн</p>
+                    <button class="btn">Додати до кошика</button>
+                </div>
+            </div>
+
+            <div class="shop__item">
+                <div class="shop__content">
+                    <img src="img/power of runes.webp" alt="Сила рун" class="shop__image">
+                    <h3>Сила рун</h3>
+                    <p>450 грн</p>
+                    <button class="btn">Додати до кошика</button>
+                </div>
+            </div>
+
+            <div class="shop__item">
+                <div class="shop__content">
+                    <img src="img/luck.png" alt="Талісман удачі" class="shop__image">
+                    <h3>Талісман удачі</h3>
+                    <p>350 грн</p>
+                    <button class="btn">Додати до кошика</button>
+                </div>
+            </div>
+
+            <div class="shop__item">
+                <div class="shop__content">
+                    <img src="img/book.png" alt="Книга мудрості" class="shop__image">
+                    <h3>Книга мудрості</h3>
+                    <p>700 грн</p>
+                    <button class="btn">Додати до кошика</button>
+                </div>
+            </div>
+
+            <div class="shop__item">
+                <div class="shop__content">
+                    <img src="img/taro_card.png" alt="Карти таро" class="shop__image">
+                    <h3>Карти таро</h3>
+                    <p>600 грн</p>
+                    <button class="btn">Додати до кошика</button>
+                </div>
+            </div>
+
+            <div class="shop__item">
+                <div class="shop__content">
+                    <img src="img/kompass.png" alt="Магічний компас" class="shop__image">
+                    <h3>Магічний компас</h3>
+                    <p>550 грн</p>
+                    <button class="btn">Додати до кошика</button>
+                </div>
+            </div>
+
+            <div class="shop__item">
+                <div class="shop__content">
+                    <img src="img/crystal.png" alt="Кристал мудрості" class="shop__image">
+                    <h3>Кристал мудрості</h3>
+                    <p>400 грн</p>
+                    <button class="btn">Додати до кошика</button>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <section id="reviews">
         <div class="container">
-            <h2>Відгуки клієнтів</h2>
+            <h2 class="reviews__header">
+                Відгуки клієнтів
+            </h2>
             <div class="reviews__list">
                 <blockquote class="review">
-                    <p>“Дякую за гадання! Все збулося, і я знайшла свій шлях. Таро допомогло мені зрозуміти, чого я хочу
-                        від життя.”</p>
+                    <p>“Дякую за гадання! Все збулося, і я знайшла свій шлях. Таро допомогло мені зрозуміти, чого я хочу від життя.”</p>
                     <footer>— Ольга</footer>
                 </blockquote>
-
+    
                 <blockquote class="review">
-                    <p>“Амулет врятував мене від багатьох негараздів. Після того, як я почала носити його, я відчула
-                        себе більш захищеною і спокійною.”</p>
+                    <p>“Амулет врятував мене від багатьох негараздів. Після того, як я почала носити його, я відчула себе більш захищеною і спокійною.”</p>
                     <footer>— Дмитро</footer>
                 </blockquote>
-
+    
                 <blockquote class="review">
-                    <p>“Після ритуалу очищення я відчула, як енергія наповнює моє тіло, а всі негативні емоції залишають
-                        мене. Це було неймовірно.”</p>
+                    <p>“Після ритуалу очищення я відчула, як енергія наповнює моє тіло, а всі негативні емоції залишають мене. Це було неймовірно.”</p>
                     <footer>— Наталія</footer>
                 </blockquote>
-
+    
                 <blockquote class="review">
-                    <p>“Гадання на Таро допомогло мені зрозуміти, чого я насправді хочу, і я почала діяти з новою
-                        впевненістю. Дякую, Хлоє!”</p>
+                    <p>“Гадання на Таро допомогло мені зрозуміти, чого я насправді хочу, і я почала діяти з новою впевненістю. Дякую, Хлоє!”</p>
                     <footer>— Ірина</footer>
                 </blockquote>
-
+    
                 <blockquote class="review">
-                    <p>“Ритуали очищення дійсно змінюють стан душі. Я відчула велику полегшення і спокій після кожної
-                        практики.”</p>
+                    <p>“Ритуали очищення дійсно змінюють стан душі. Я відчула велику полегшення і спокій після кожної практики.”</p>
                     <footer>— Олена</footer>
                 </blockquote>
+
+                <blockquote class="review">
+                    <p>“Я була скептичною щодо ритуалів, але після першого сеансу зрозуміла, наскільки це потужно. Відчуваю оновлення в кожній сфері життя.”</p>
+                    <footer>— Марина</footer>
+                </blockquote>
+    
+                <blockquote class="review">
+                    <p>“Амулет, який я придбала, став моїм справжнім оберегом. Я навіть отримала підвищення на роботі через кілька днів після покупки!”</p>
+                    <footer>— Світлана</footer>
+                </blockquote>
+    
+                <blockquote class="review">
+                    <p>“Моє перше гадання на Таро — це досвід, який я ніколи не забуду. Це була карта змін, і вже через тиждень моє життя почало змінюватись на краще.”</p>
+                    <footer>— Аліна</footer>
+                </blockquote>
+    
+                <blockquote class="review">
+                    <p>“Хлоє створила для мене індивідуальний ритуал, і це спрацювало. Я відчуваю себе сильнішою і готовою до нових викликів!”</p>
+                    <footer>— Вікторія</footer>
+                </blockquote>
+    
+                <blockquote class="review">
+                    <p>“Мені порекомендували цей сервіс друзі, і я вражена. Ритуали очищення ідеально доповнили мою духовну практику.”</p>
+                    <footer>— Лариса</footer>
+                </blockquote>
+
+                <blockquote class="review">
+                    <p>“Після гадання на Таро я отримала ясність щодо свого майбутнього. Всі питання, що турбували мене, знайшли відповіді, і я відчула спокій.”</p>
+                    <footer>— Катерина</footer>
+                </blockquote>
+                
+                <blockquote class="review">
+                    <p>“Час, проведений з Хлоєю, змінив моє життя. Її ритуали дали мені нове бачення себе і моїх можливостей.”</p>
+                    <footer>— Оксана</footer>
+                </blockquote>
+                
             </div>
         </div>
     </section>
+    
 
 
     <section id="gallery">

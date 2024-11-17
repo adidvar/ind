@@ -1,0 +1,115 @@
+#reviews {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #e0f7fa, #ffffff);
+    position: relative;
+    overflow: hidden;
+}
+
+#reviews::before, 
+#reviews::after {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(12, 144, 126, 0.6), transparent);
+    animation: float 6s infinite alternate ease-in-out;
+}
+
+#reviews::before {
+    top: -100px;
+    left: -150px;
+}
+
+#reviews::after {
+    bottom: -100px;
+    right: -150px;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(30px);
+    }
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#reviews h2 {
+    font-size: 2.5em;
+    color: #0c907e;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #0c907e, #004d40);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.reviews__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.review {
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid #0c907e;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    animation: fade-in 1.5s ease-in-out;
+}
+
+.review::before {
+    content: '❝';
+    font-size: 4em;
+    color: #e0f7fa;
+    position: absolute;
+    top: -30px;
+    left: -10px;
+    z-index: 0;
+}
+
+.review p {
+    font-size: 1.2em;
+    color: #004d40;
+    line-height: 1.8;
+    z-index: 1;
+    position: relative;
+    font-family: 'Georgia', serif;
+}
+
+.review footer {
+    font-size: 1em;
+    color: #00796b;
+    text-align: right;
+    margin-top: 20px;
+    z-index: 1;
+    position: relative;
+    font-style: italic;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
