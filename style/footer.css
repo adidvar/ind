@@ -14,23 +14,30 @@
     padding: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    color:black;
+    color: black;
     background: white;
     column-gap: 80px;
+    row-gap: 80px;
     border-radius: 10px 10px 0px 0px;
 }
 
+@media only screen and (max-width: 1200px) {
+    .footer__container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 .footer__title {
-    color:black;
+    color: black;
     font-family: "Great Vibes", serif;
     font-weight: bold;
     font-size: 2em;
     margin-bottom: 20px;
 }
 
-.footer__link{
+.footer__link {
     font-family: "Sofia Sans", sans-serif;
-    color:black;
+    color: black;
     text-decoration: none;
     font-style: italic;
 }
@@ -43,24 +50,25 @@
     text-align: center;
 }
 
-.footer__authors{
+.footer__authors {
     color: white;
     background-color: black;
     text-align: center;
     padding-bottom: 20px;
 }
 
-.footer__input{
+.footer__input {
     font-family: "Sofia Sans", sans-serif;
-    color:black;
+    color: black;
     text-decoration: none;
     font-style: italic;
     padding: 2px 4px;
 }
-.footer__button{
+
+.footer__button {
     margin-top: 6px;
     font-family: "Sofia Sans", sans-serif;
-    color:black;
+    color: black;
     text-decoration: none;
     font-weight: bold;
     padding: 2px 4px;
