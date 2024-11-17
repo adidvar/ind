@@ -8,9 +8,12 @@
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/main2.css">
     <link rel="stylesheet" href="style/services.css">
+    <link rel="stylesheet" href="style/about.css">
     <link rel="stylesheet" href="style/reviews.css">
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/wrapper.css">
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,22 +27,47 @@
     <header class="header">
         <h1 class="header__title">Сайт відьми</h1>
         <nav class="header__nav">
-            <ul>
-                <li><a class="header__link" href="#about">Про себе</a></li>
-                <li><a class="header__link" href="#services">Послуги</a></li>
-                <li><a class="header__link" href="#shop">Крамниця</a></li>
-                <li><a class="header__link" href="#reviews">Відгуки</a></li>
-                <li><a class="header__link" href="#gallery">Галерея</a></li>
-            </ul>
+            <div class="width-wrapper">
+                <ul class="header__nav__list">
+                    <li><a class="header__link" href="#about">Про себе</a></li>
+                    <li><a class="header__link" href="#services">Послуги</a></li>
+                    <li><a class="header__link" href="#shop">Крамниця</a></li>
+                    <li><a class="header__link" href="#reviews">Відгуки</a></li>
+                    <li><a class="header__link" href="#gallery">Галерея</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <section id="about">
-        <div class="container">
-            <h2>Про себе</h2>
-            <p>Я — Хлоя, відьма, що відкриває для вас магію. Моя місія — допомогти кожному знайти гармонію у житті за допомогою магічних знань і сили природи.</p>
-                <blockquote>“Магія — це не таємниця, а майстерність розуміння світу.”</blockquote>
-            </div>
+        <div class="width-wrapper">
+            <h1>Біографія</h1>
+            <p>Мене звати Хлоя, і я — відьма з самого серця Конотопа. У нашому місті магія — це не просто легенди, а
+                справжнє мистецтво, яке я успадкувала від своїх пращурів. Моя родина завжди славилася своєю мудрістю,
+                вмінням розуміти природу і допомагати людям знаходити відповіді на життєві виклики.</p>
+            <p>З дитинства я відчувала особливий зв'язок із природою та всім, що виходить за межі буденного. Перші уроки
+                магії я отримала від своєї бабусі, яка навчила мене чути голос трав, відчувати силу каменів і розуміти
+                енергію світу. Вже тоді я знала, що моє призначення — допомагати людям через силу старовинних знань.</p>
+
+            <h2>Магічна практика</h2>
+            <p>Моя магія — це поєднання традицій Конотопських відьом і сучасних практик. Я працюю з травами, картами
+                Таро, оберегами та енергетичними практиками. Кожен обряд, кожне зілля створюється з душею, щоб допомогти
+                вам знайти гармонію в житті, коханні, кар'єрі чи навіть у власних думках.</p>
+
+            <h2>Моє натхнення</h2>
+            <p>Конотоп — це моє джерело сили. Старовинні ліси, поля, де вітер шепоче свої таємниці, і тихі озера, що
+                зберігають спокій століть, — усе це дає мені натхнення. Я впевнена, що магія завжди поруч, варто лише
+                навчитися бачити її в кожному дні.</p>
+
+            <h2>Чому звернутися до мене?</h2>
+            <p>Я завжди готова вислухати, підтримати і знайти для вас найкраще рішення. Чи потрібна вам порада в
+                складній ситуації, чи бажаєте ви притягнути у своє життя щось прекрасне — разом ми знайдемо шлях до
+                вашого щастя.</p>
+            <p>Пам’ятайте, що магія — це не лише чари, а й щире бажання змінити життя на краще. І я тут, щоб допомогти
+                вам у цьому.</p>
+
+            <p><strong>Відьма Хлоя, ваш провідник у світ гармонії.</strong></p>
+        </div>
     </section>
 
     <section id="services">
@@ -113,56 +141,63 @@
                 <div class="service-card__extra">
                     Побічний ефект: нестримне бажання завершити все на світі, але тільки до першого ранкового променя
                     сонця.
-                    </div>
-                    </div>
+                </div>
+            </div>
 
 
 
     </section>
-    
-        <div class="container">
-            <h2>Послуги</h2>
-            <p>Магія не має меж, і я готова поділитись з вами різноманітними магічними практиками, які допоможуть відкрити нові горизонти у вашому житті. Ось деякі з моїх послуг:</p>
-            
-            <div class="services__list">
-                <div class="service">
-                    <img src="img/taro.png" alt="Гадання на Таро" class="service__img">
-                    <h3>Гадання на Таро</h3>
-                    <p>Розкрию ваші шляхи та можливості за допомогою древніх карт. Таро не просто дають відповіді — вони допомагають вам зрозуміти ваші справжні бажання і потреби.</p>
-                    <button class="btn">Дізнатись більше</button>
-                </div>
-                <div class="service">
-                    <img src="img/ritual.webp" alt="Ритуали очищення" class="service__img">
-                    <h3>Ритуали очищення</h3>
-                    <p>Очистіть свою енергію від негативу та знайдіть спокій. Після очищення ви будете відчувати легкість і гармонію у своєму житті.</p>
-                    <button class="btn">Дізнатись більше</button>
-                </div>
-                <div class="service">
-                    <img src="img/amulet.avif" alt="Захисні амулети" class="service__img">
-                    <h3>Захисні амулети</h3>
-                    <p>Амулети ручної роботи для захисту та підтримки вашої енергетики. Підходять для людей, які шукають захист від негативу.</p>
-                    <button class="btn">Дізнатись більше</button>
-                </div>
-                <div class="service">
-                    <img src="img/3.png" alt="Заклинання любові" class="service__img">
-                    <h3>Заклинання любові</h3>
-                    <p>Магічні обряди для залучення справжньої любові. Вони допомагають розкрити серце і побудувати гармонійні стосунки.</p>
-                    <button class="btn">Дізнатись більше</button>
-                </div>
-                <div class="img/service">
-                    <img src="drugs.jpg" alt="Духовне лікування" class="service__img">
-                    <h3>Духовне лікування</h3>
-                    <p>Поглиблене лікування на рівні душі та тіла. Відновлюємо баланс енергії та допомагаємо знайти внутрішній спокій.</p>
-                    <button class="btn">Дізнатись більше</button>
-                </div>
-                <div class="service">
-                    <img src="img/defense.webp" alt="Магія захисту" class="service__img">
-                    <h3>Магія захисту</h3>
-                    <p>Магічні ритуали для захисту вашого житла, родини та енергетичного поля. Забезпечте себе від будь-яких зовнішніх впливів і негативу.</p>
-                    <button class="btn">Дізнатись більше</button>
-                </div>
+
+    <div class="container">
+        <h2>Послуги</h2>
+        <p>Магія не має меж, і я готова поділитись з вами різноманітними магічними практиками, які допоможуть відкрити
+            нові горизонти у вашому житті. Ось деякі з моїх послуг:</p>
+
+        <div class="services__list">
+            <div class="service">
+                <img src="img/taro.png" alt="Гадання на Таро" class="service__img">
+                <h3>Гадання на Таро</h3>
+                <p>Розкрию ваші шляхи та можливості за допомогою древніх карт. Таро не просто дають відповіді — вони
+                    допомагають вам зрозуміти ваші справжні бажання і потреби.</p>
+                <button class="btn">Дізнатись більше</button>
+            </div>
+            <div class="service">
+                <img src="img/ritual.webp" alt="Ритуали очищення" class="service__img">
+                <h3>Ритуали очищення</h3>
+                <p>Очистіть свою енергію від негативу та знайдіть спокій. Після очищення ви будете відчувати легкість і
+                    гармонію у своєму житті.</p>
+                <button class="btn">Дізнатись більше</button>
+            </div>
+            <div class="service">
+                <img src="img/amulet.avif" alt="Захисні амулети" class="service__img">
+                <h3>Захисні амулети</h3>
+                <p>Амулети ручної роботи для захисту та підтримки вашої енергетики. Підходять для людей, які шукають
+                    захист від негативу.</p>
+                <button class="btn">Дізнатись більше</button>
+            </div>
+            <div class="service">
+                <img src="img/3.png" alt="Заклинання любові" class="service__img">
+                <h3>Заклинання любові</h3>
+                <p>Магічні обряди для залучення справжньої любові. Вони допомагають розкрити серце і побудувати
+                    гармонійні стосунки.</p>
+                <button class="btn">Дізнатись більше</button>
+            </div>
+            <div class="img/service">
+                <img src="drugs.jpg" alt="Духовне лікування" class="service__img">
+                <h3>Духовне лікування</h3>
+                <p>Поглиблене лікування на рівні душі та тіла. Відновлюємо баланс енергії та допомагаємо знайти
+                    внутрішній спокій.</p>
+                <button class="btn">Дізнатись більше</button>
+            </div>
+            <div class="service">
+                <img src="img/defense.webp" alt="Магія захисту" class="service__img">
+                <h3>Магія захисту</h3>
+                <p>Магічні ритуали для захисту вашого житла, родини та енергетичного поля. Забезпечте себе від будь-яких
+                    зовнішніх впливів і негативу.</p>
+                <button class="btn">Дізнатись більше</button>
             </div>
         </div>
+    </div>
 
     <section id="shop">
         <div class="container">
@@ -193,7 +228,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </section>
 
@@ -202,76 +237,84 @@
             <h2>Відгуки клієнтів</h2>
             <div class="reviews__list">
                 <blockquote class="review">
-                    <p>“Дякую за гадання! Все збулося, і я знайшла свій шлях. Таро допомогло мені зрозуміти, чого я хочу від життя.”</p>
+                    <p>“Дякую за гадання! Все збулося, і я знайшла свій шлях. Таро допомогло мені зрозуміти, чого я хочу
+                        від життя.”</p>
                     <footer>— Ольга</footer>
                 </blockquote>
-    
+
                 <blockquote class="review">
-                    <p>“Амулет врятував мене від багатьох негараздів. Після того, як я почала носити його, я відчула себе більш захищеною і спокійною.”</p>
+                    <p>“Амулет врятував мене від багатьох негараздів. Після того, як я почала носити його, я відчула
+                        себе більш захищеною і спокійною.”</p>
                     <footer>— Дмитро</footer>
                 </blockquote>
-    
+
                 <blockquote class="review">
-                    <p>“Після ритуалу очищення я відчула, як енергія наповнює моє тіло, а всі негативні емоції залишають мене. Це було неймовірно.”</p>
+                    <p>“Після ритуалу очищення я відчула, як енергія наповнює моє тіло, а всі негативні емоції залишають
+                        мене. Це було неймовірно.”</p>
                     <footer>— Наталія</footer>
                 </blockquote>
-    
+
                 <blockquote class="review">
-                    <p>“Гадання на Таро допомогло мені зрозуміти, чого я насправді хочу, і я почала діяти з новою впевненістю. Дякую, Хлоє!”</p>
+                    <p>“Гадання на Таро допомогло мені зрозуміти, чого я насправді хочу, і я почала діяти з новою
+                        впевненістю. Дякую, Хлоє!”</p>
                     <footer>— Ірина</footer>
                 </blockquote>
-    
+
                 <blockquote class="review">
-                    <p>“Ритуали очищення дійсно змінюють стан душі. Я відчула велику полегшення і спокій після кожної практики.”</p>
+                    <p>“Ритуали очищення дійсно змінюють стан душі. Я відчула велику полегшення і спокій після кожної
+                        практики.”</p>
                     <footer>— Олена</footer>
                 </blockquote>
             </div>
         </div>
     </section>
-    
+
 
     <section id="gallery">
         <div class="container">
             <h2>Галерея</h2>
-            
+
         </div>
     </section>
 
     <footer class="footer">
-        <div class="footer__container">
-            <div class="footer__section footer__section--about">
-                <h3 class="footer__title">Про нас</h3>
-                <p class="footer__text">Магія і технології зливаються в нашому світі. Ми пропонуємо унікальні послуги та
-                    продукти, що відповідають найвищим стандартам. З нами ваші мрії стануть реальністю.</p>
-            </div>
+        <div class="width-wrapper">
+            <div class="footer__container">
+                <div class="footer__section footer__section--about">
+                    <h3 class="footer__title">Про нас</h3>
+                    <p class="footer__text">Магія і технології зливаються в нашому світі. Ми пропонуємо унікальні
+                        послуги та
+                        продукти, що відповідають найвищим стандартам. З нами ваші мрії стануть реальністю.</p>
+                </div>
 
-            <div class="footer__section footer__section--contact">
-                <h3 class="footer__title">Контактні дані</h3>
-                <ul class="footer__list">
-                    <li class="footer__list-item"><strong>Телефон:</strong> +380 123 456 789</li>
-                    <li class="footer__list-item"><strong>Email:</strong> contact@vidma-khloya.com</li>
-                    <li class="footer__list-item"><strong>Адреса:</strong> вул. Магічна, 12, Київ, Україна</li>
-                </ul>
-            </div>
+                <div class="footer__section footer__section--contact">
+                    <h3 class="footer__title">Контактні дані</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list-item"><strong>Телефон:</strong> +380 123 456 789</li>
+                        <li class="footer__list-item"><strong>Email:</strong> contact@vidma-khloya.com</li>
+                        <li class="footer__list-item"><strong>Адреса:</strong> вул. Магічна, 12, Київ, Україна</li>
+                    </ul>
+                </div>
 
-            <div class="footer__section footer__section--partners">
-                <h3 class="footer__title">Наші партнери</h3>
-                <ul class="footer__list">
-                    <li class="footer__list-item"><a class="footer__link" href="https://www.partner1.com"
-                            target="_blank">Асоціація відьом підприємців</a></li>
-                    <li class="footer__list-item"><a class="footer__link" href="https://www.partner2.com"
-                            target="_blank">Асоціація анонімних відьм</a></li>
-                    <li class="footer__list-item"><a class="footer__link" href="https://www.partner3.com"
-                            target="_blank">Асоціація з боротьби з чорною магією</a></li>
-                </ul>
-            </div>
+                <div class="footer__section footer__section--partners">
+                    <h3 class="footer__title">Наші партнери</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list-item"><a class="footer__link" href="https://www.partner1.com"
+                                target="_blank">Асоціація відьом підприємців</a></li>
+                        <li class="footer__list-item"><a class="footer__link" href="https://www.partner2.com"
+                                target="_blank">Асоціація анонімних відьм</a></li>
+                        <li class="footer__list-item"><a class="footer__link" href="https://www.partner3.com"
+                                target="_blank">Асоціація з боротьби з чорною магією</a></li>
+                    </ul>
+                </div>
 
-            <div class="footer__section footer__section--subscribe">
-                <h3 class="footer__title">Підпишіться на новини</h3>
-                <form class="footer__form" action="#" method="POST">
-                <input class="footer__input" type="email" placeholder="Ваш Email" /> <br>
-                    <button class="footer__button" type="submit">Підписатися</button>
-                </form>
+                <div class="footer__section footer__section--subscribe">
+                    <h3 class="footer__title">Підпишіться на новини</h3>
+                    <form class="footer__form" action="#" method="POST">
+                        <input class="footer__input" type="email" placeholder="Ваш Email" /> <br>
+                        <button class="footer__button" type="submit">Підписатися</button>
+                    </form>
+                </div>
             </div>
         </div>
 

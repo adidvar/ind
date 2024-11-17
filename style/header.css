@@ -18,17 +18,14 @@
     font-size: 3.5rem;
 }
 
-nav ul {
-    padding: 4px;
+.header__nav{
+    padding: 8px 0;
     background: #09574c;
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin-top: 10px;
 }
 
-nav ul li {
-    margin: 0 15px;
+.header__nav__list {
+    display: flex;
+    justify-content: space-around;
 }
 
 .header__link {

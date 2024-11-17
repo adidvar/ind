@@ -11,9 +11,7 @@
 }
 
 .footer__container {
-    width: 70%;
     padding: 40px;
-    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     color:black;
