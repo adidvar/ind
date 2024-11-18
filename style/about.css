@@ -1,0 +1,13 @@
+#about{
+    background-color: aliceblue;
+}
+
+.about__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+    column-gap: 40px;
+}
+.about__block img{
+    width: 100%;
+}

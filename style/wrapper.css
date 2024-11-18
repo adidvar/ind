@@ -1,0 +1,29 @@
+.width-wrapper{
+    background: transparent; 
+}
+
+@media only screen and (min-width: 576px) {
+.width-wrapper{
+    width: 98%;
+    margin: auto;
+}
+ @media only screen and (min-width: 768px) {
+.width-wrapper{
+    width: 94%;
+    margin: auto;
+}
+ }
+
+ @media only screen and (min-width: 992px) {
+.width-wrapper{
+    width: 83%;
+    margin: auto;
+}
+ }
+
+@media only screen and (min-width: 1200px) {
+.width-wrapper{
+    width: 66%;
+    margin: auto;
+}
+}
