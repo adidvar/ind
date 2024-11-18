@@ -1,5 +1,5 @@
 #faq{
-    background-color: #edfff5;
+    background:  #fffeed;
     padding-top: 20px;
     padding-bottom: 40px;
 }
@@ -23,6 +23,14 @@ margin-left: 20px;
     padding: 20px;
     border-radius: 40px;
     grid-row-start: span 2;
+    transition: all 0.3s ease-in-out 0.3s;
+}
+
+.faq__block:hover
+{
+    box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.3);
+    transform: translateY(-10px);
+    transition: all 1s ease-in-out 0s;
 }
 .faq__block h2{
     font-family: "Sofia Sans", sans-serif;
@@ -38,12 +46,12 @@ margin-left: 20px;
 }
 
 .faq__block:nth-child(odd){
-    background-color: #c0defa;
+    background-color: #d8e6d8;
     padding: 20px;
     border-radius: 40px;
 }
 .faq__block:nth-child(even){
-    background-color: #c9e0f5;
+    background-color: #cae0d5;
     padding: 20px;
     border-radius: 40px;
 }

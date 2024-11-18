@@ -1,6 +1,6 @@
 #services {
   background-image: url("../img/witch.jpg");
-  border-top: 8px solid #ffffe1;
+  border-top: 12px solid #f7f4bc;
   border-bottom: 8px solid #ffffe1;
   background-position: center;
   background-repeat: no-repeat;
@@ -33,7 +33,7 @@
   background-color: #c7a2f5;
   border-radius: 40px;
   position: relative;
-  top: -2em;
+  top: -2.2em;
   left: 3em;
   border-bottom: 8px solid #8f67bf;
   border-top: 8px solid white;

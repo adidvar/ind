@@ -1,5 +1,5 @@
 #about{
-    background-color: aliceblue;
+    background-color:#fcfeff ;
 }
 
 .about__container{
@@ -12,24 +12,52 @@
 }
 
 .about__block{
-    background-color: #c9e0f5;
+    border: 0px solid #c9c8b3; 
+    transition: all 0.3s ease-in-out 0.3s;
+
     padding: 20px;
     border-radius: 40px;
+}
+
+.about__block:not(:first-child):hover
+{
+    box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.3);
+    transform: translateY(-10px);
+    transition: all 1s ease-in-out 0s;
+}
+
+.about__block:nth-child(odd){
+    background-color: #faf9ed;
+}
+
+.about__block:nth-child(even){
+    background-color: #faf6ed;
 }
 
 .about__block:first-child{
     border-radius: 0px;
     padding: 0px;
-    background: aliceblue;
-    border:8px solid white ;
+
+    -webkit-box-shadow: inset 0px 0px 63px -8px rgba(0,0,0,1);
+    -moz-box-shadow: inset 0px 0px 63px -8px rgba(0,0,0,1);
+    box-shadow: inset 0px 0px 63px -8px rgba(0,0,0,1);
+
+    border: 8px solid #115c4f ;
+    border-radius: 12px;
     max-height: fit-content;
     grid-row-start: span 2;
+}
+
+.about__block:first-child:hover{
+    margin-top: 0px;
+    border: 8px solid #115c4f ;
 }
 
 
 .about__block p{
     font-family: "Sofia Sans", sans-serif;
     margin-top: 20px;
+    margin-left: 4px;
 }
 
 .about__block img{
@@ -38,7 +66,6 @@
 }
 
 .about__block h1{
-
     font-family: "Great Vibes", serif;
     font-weight: bold;
     font-size: 2em;
@@ -50,5 +77,5 @@
     font-family: "Great Vibes", serif;
     font-weight: bold;
     font-size: 1.7em;
+    color:black;
 }
-

@@ -18,7 +18,7 @@
     font-size: 3.5rem;
 }
 
-.header__nav{
+.header__nav {
     padding: 8px 0;
     background: #09574c;
 }
@@ -26,6 +26,7 @@
 .header__nav__list {
     display: flex;
     justify-content: space-around;
+    list-style: square inside;
 }
 
 .header__link {
