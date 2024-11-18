@@ -1,50 +1,57 @@
-.width-wrapper{
-    background: transparent; 
+.width-wrapper {
+    background: transparent;
+    transition: transform 1.3s ease;
+}
+
+*:has(.width-wrapper) {
+    position: relative;
+    overflow-x: hidden;
 }
 
 @media only screen and (min-width: 576px) {
-.width-wrapper{
-    width: 98%;
-    margin: auto;
-}
- @media only screen and (min-width: 768px) {
-.width-wrapper{
-    width: 94%;
-    margin: auto;
-}
-#reviews {
-    padding: 60px 15px;
-}
+    .width-wrapper {
+        width: 98%;
+        margin: auto;
+    }
 
-.reviews__title {
-    font-size: 2.2em;
-}
+    @media only screen and (min-width: 768px) {
+        .width-wrapper {
+            width: 94%;
+            margin: auto;
+        }
 
-.review {
-    padding: 20px;
-}
+        #reviews {
+            padding: 60px 15px;
+        }
 
-.review p {
-    font-size: 1.2em;
-}
+        .reviews__title {
+            font-size: 2.2em;
+        }
 
-.review footer {
-    font-size: 1em;
-}
- }
+        .review {
+            padding: 20px;
+        }
 
- @media only screen and (min-width: 992px) {
-.width-wrapper{
-    width: 83%;
-    margin: auto;
-}
- }
+        .review p {
+            font-size: 1.2em;
+        }
 
-@media only screen and (min-width: 1200px) {
-.width-wrapper{
-    width: 66%;
-    margin: auto;
-}
-}
-}
+        .review footer {
+            font-size: 1em;
+        }
+    }
 
+    @media only screen and (min-width: 992px) {
+        .width-wrapper {
+            width: 83%;
+            margin: auto;
+        }
+    }
+
+    @media only screen and (min-width: 1200px) {
+        .width-wrapper {
+            width: 66%;
+            margin: auto;
+        }
+    }
+}
