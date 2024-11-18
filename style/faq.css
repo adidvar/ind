@@ -1,0 +1,56 @@
+#faq{
+    background-color: #edfff5;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.faq__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 40px;
+    column-gap: 40px;
+}
+
+.faq__header{
+padding-bottom: 20px;
+font-size: 2.5em;
+font-family: "Sofia Sans", sans-serif;
+margin-left: 20px;
+}
+
+.faq__block{
+    background-color: #c9e0f5;
+    padding: 20px;
+    border-radius: 40px;
+    grid-row-start: span 2;
+}
+.faq__block h2{
+    font-family: "Sofia Sans", sans-serif;
+}
+
+.faq__block h3{
+    margin-top: 16px;
+    font-family: "Sofia Sans", sans-serif;
+}
+
+.faq__block p{
+    font-family: "Sofia Sans", sans-serif;
+}
+
+.faq__block:nth-child(odd){
+    background-color: #c0defa;
+    padding: 20px;
+    border-radius: 40px;
+}
+.faq__block:nth-child(even){
+    background-color: #c9e0f5;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+.faq__block:nth-child(1){
+    grid-row-start: span 3;
+}
+.faq__block:nth-child(3){
+    grid-row-start: span 3;
+}

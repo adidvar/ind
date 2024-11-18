@@ -23,6 +23,7 @@
     background: aliceblue;
     border:8px solid white ;
     max-height: fit-content;
+    grid-row-start: span 2;
 }
 
 
