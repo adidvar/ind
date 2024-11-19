@@ -7,6 +7,7 @@
   background-size: cover;
   background-position: top;
   padding-bottom: 120px;
+  font-family: "Sofia Sans", sans-serif;
 }
 
 #shop>div>h2 {
@@ -21,16 +22,8 @@
   grid-template-columns: repeat(4, 1fr);
   column-gap: 40px;
   row-gap: 40px;
-}
-
-.services__list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.service {
-  text-align: center;
-  margin: 20px;
+  padding: 20px;
+  padding-bottom: 30px;
 }
 
 .shop__header {
@@ -55,33 +48,42 @@
   padding: 0 15px;
 }
 
-.shop__item {
+.shop__content {
   background: #fff;
-  border-radius: 15px;
+  border-radius: 40px;
   overflow: hidden;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
 
-.shop__item:hover {
+.shop__content p{
+  font-family: "Sofia Sans", sans-serif;
+  margin-bottom: 12px;
+  font-style: italic;
+}
+
+.shop__content:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
-.shop__content {
-  padding: 20px;
-  position: relative;
-  z-index: 2;
-}
-
 .shop__image {
   width: 100%;
-  height: auto;
+  height: 240px;
+  object-fit: cover;
   border-radius: 10px;
   transition: transform 0.3s ease;
 }
 
-.shop__image:hover {
+.shop__content:hover>.shop__image {
   transform: scale(1.1);
 }
 
@@ -97,24 +99,20 @@
   color: #f39c12;
 }
 
-#shop .shop__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-}
-
-#shop .btn {
+.btng {
   background-color: #0C907E;
+  border: none;
+  border-bottom: 8px solid #0a6458;
+
   color: #fff;
   padding: 12px 25px;
   font-size: 1.1rem;
-  border: none;
-  border-radius: 8px;
+  border-radius: 20px;
+  width: 100%;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
   margin-top: auto;
+  font-family: "Sofia Sans", sans-serif;
 }
 
 @media (max-width: 768px) {
