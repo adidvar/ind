@@ -11,6 +11,22 @@
     column-gap: 40px;
 }
 
+@media only screen and (max-width: 800px) {
+  .faq__container {
+    grid-template-columns: 1fr 1fr;
+    padding:40px;
+    padding-top: 0;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .faq__container {
+    grid-template-columns: 1fr;
+    padding:40px;
+    padding-top: 0;
+  }
+}
+
 .faq__header{
 padding-bottom: 20px;
 font-size: 2.5em;
@@ -22,8 +38,11 @@ margin-left: 20px;
     background-color: #c9e0f5;
     padding: 20px;
     border-radius: 40px;
-    grid-row-start: span 2;
     transition: all 0.3s ease-in-out 0.3s;
+}
+
+.faq__container > div:has(.faq__block){
+    grid-row-start: span 2;
 }
 
 .faq__block:hover
@@ -45,20 +64,28 @@ margin-left: 20px;
     font-family: "Sofia Sans", sans-serif;
 }
 
-.faq__block:nth-child(odd){
+.faq__container > div:has(.faq__block):nth-child(odd)  .faq__block{
     background-color: #d8e6d8;
     padding: 20px;
     border-radius: 40px;
+    height: 100%;
 }
-.faq__block:nth-child(even){
+.faq__container > div:has(.faq__block):nth-child(even)  .faq__block{
     background-color: #cae0d5;
     padding: 20px;
     border-radius: 40px;
+    height: 100%;
 }
 
-.faq__block:nth-child(1){
+.faq__container > div:has(.faq__block):nth-child(1){
     grid-row-start: span 3;
 }
-.faq__block:nth-child(3){
+.faq__container > div:has(.faq__block):nth-child(3){
     grid-row-start: span 3;
+}
+
+@media only screen and (max-width: 800px) {
+.faq__container > div:has(.faq__block):nth-child(3){
+    grid-row-start: span 2;
+}
 }

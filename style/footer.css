@@ -27,6 +27,12 @@
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .footer__container {
+        grid-template-columns: 1fr;
+    }
+}
+
 .footer__title {
     color: black;
     font-family: "Great Vibes", serif;

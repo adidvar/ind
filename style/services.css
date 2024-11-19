@@ -1,30 +1,36 @@
 #services {
   background-image: url("../img/witch.jpg");
   border-top: 12px solid #f7f4bc;
-  border-bottom: 8px solid #ffffe1;
+  border-bottom: 8px solid #f7f4bc;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+  padding-bottom: 120px;
 }
 
 .servicer__wrap {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(6, auto);
   column-gap: 40px;
   row-gap: 40px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 800px) {
   .servicer__wrap {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    column-gap: 40px;
-    row-gap: 40px;
+    padding:40px;
   }
 }
+
+@media only screen and (max-width: 576px) {
+  .servicer__wrap {
+    grid-template-columns: repeat(1, 1fr);
+    padding:40px;
+  }
+}
+
 
 .services__header {
   font-family: "Great Vibes", serif;
@@ -33,28 +39,81 @@
   background-color: #c7a2f5;
   border-radius: 40px;
   position: relative;
-  top: -2.2em;
-  left: 3em;
   border-bottom: 8px solid #8f67bf;
   border-top: 8px solid white;
   height: min-content;
   width: min-content;
   padding: 8px 32px;
+  margin: 30px;
 }
 
 .service-card {
-  font-family: "Sofia Sans", sans-serif;
-  /* box-shadow: inset 0px 0px 12px 0px rgba(255, 255, 255, 1);
- */
   border: 2px solid white;
   border-radius: 30px;
   padding: 16px;
-  background-color: #242424;
-  /* backdrop-filter: blur(12px);
- */
+  background-color: #fafafa;
+  transition: all 0.3s ease-in-out 0.3s;
+  height: 100%;
 }
 
+div:has(.service-card) {
+  grid-row: span 2;
+}
+
+div:has(.service-card):nth-child(1) {
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+div:has(.service-card):nth-child(3) {
+  grid-column: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+@media only screen and (max-width: 800px) {
+  div:has(.service-card) {
+    grid-row: span 2;
+  }
+
+  div:has(.service-card):nth-child(1) {
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+
+  div:has(.service-card):nth-child(3) {
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  div:has(.service-card) {
+    grid-row: span 2;
+  }
+
+  div:has(.service-card):nth-child(1) {
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  div:has(.service-card):nth-child(3) {
+    grid-column: 1;
+    grid-row-start: 3;
+    grid-row-end: 5;
+  }
+}
+
+.service-card:hover {
+  box-shadow: 0px 20px 20px 0px rgba(255, 255, 255, 0.3);
+  transform: translateY(-10px);
+  transition: all 1s ease-in-out 0s;
+}
+
+
 .service-card__title {
+  font-family: "Sofia Sans", sans-serif;
   font-size: 1.5em;
   font-weight: bold;
   padding: 0.2em 0 0.2em 0.8em;
@@ -63,24 +122,26 @@
   border-radius: 14px;
   margin-bottom: 8px;
   border-bottom: 6px solid #dbdbc1;
-
 }
 
 .service-card__description {
+  font-family: "Sofia Sans", sans-serif;
   font-size: 1em;
-  color: white;
+  color: black;
   margin-bottom: 8px;
 }
 
 .service-card__price {
+  font-family: "Sofia Sans", sans-serif;
   font-weight: bold;
   font-size: 1.2em;
-  color: white;
+  color: black;
   margin-bottom: 8px;
 }
 
 .service-card__extra {
+  font-family: "Sofia Sans", sans-serif;
   font-size: 0.9em;
-  color: white;
+  color: black;
   font-style: italic;
 }

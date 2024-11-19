@@ -1,4 +1,4 @@
-elements = document.getElementsByClassName("width-wrapper");
+elements = document.getElementsByClassName("move-wrapper");
 
 
 addEventListener("scroll", (event) => {
@@ -8,12 +8,17 @@ addEventListener("scroll", (event) => {
     Array.from(elements).forEach((e,i) => {
         const rect = e.getBoundingClientRect();
 
+        way = true;
+
         if (rect.y + rect.height < 20 ) {
-            e.style.transform = `translateX(${((i%2==0) ? 1: -1) *mwidth}px)`;
+            e.style.transform = `translateX(${(way ? 1 : -1) *mwidth/4.0}px)`;
+            e.style.opacity = "0.0";
         } else if(rect.y - mheight > 20 ) {
-            e.style.transform = `translateX(${((i%2==0) ? 1: -1) *mwidth}px)`;
+            e.style.transform = `translateX(${(way ? 1 : -1) *mwidth/4.0}px)`;
+            e.style.opacity = "0.0";
         } else {
             e.style.transform = `translateX(${0}px)`;
+            e.style.opacity = "1.0";
         }
     });
 

@@ -29,6 +29,17 @@
     list-style: square inside;
 }
 
+@media only screen and (max-width: 650px) {
+    .header__nav__list {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 80%;
+        margin: auto;
+        list-style: square inside;
+    }
+}
+
+
 .header__link {
     color: white;
     font-family: "Sofia Sans", sans-serif;

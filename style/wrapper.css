@@ -1,11 +1,14 @@
-.width-wrapper {
-    background: transparent;
-    transition: transform 1.3s ease;
+.move-wrapper {
+    transition: transform 1.0s ease, opacity 1.6s ease;
+    opacity: 1.0;
 }
 
-*:has(.width-wrapper) {
+*:has(.move-wrapper) {
     position: relative;
-    overflow-x: hidden;
+}
+
+.width-wrapper {
+    background: transparent;
 }
 
 @media only screen and (min-width: 576px) {

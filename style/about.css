@@ -1,8 +1,8 @@
-#about{
-    background-color:#fcfeff ;
+#about {
+    background-color: #fcfeff;
 }
 
-.about__container{
+.about__container {
     padding-top: 40px;
     padding-bottom: 80px;
     display: grid;
@@ -11,71 +11,84 @@
     column-gap: 40px;
 }
 
-.about__block{
-    border: 0px solid #c9c8b3; 
+.about__container .about__block {
+    border: 0px solid #c9c8b3;
     transition: all 0.3s ease-in-out 0.3s;
 
     padding: 20px;
     border-radius: 40px;
 }
 
-.about__block:not(:first-child):hover
-{
-    box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.3);
+.about__container .about__block:hover {
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.3);
     transform: translateY(-10px);
     transition: all 1s ease-in-out 0s;
 }
 
-.about__block:nth-child(odd){
+.about__container div:has(.about__block):nth-child(odd) .about__block {
+    background-color: #f7f0e1
+}
+
+.about__container div:has(.about__block):nth-child(even) .about__block {
     background-color: #faf9ed;
 }
 
-.about__block:nth-child(even){
-    background-color: #faf6ed;
-}
-
-.about__block:first-child{
+.about__container div:has(.about__block):first-child .about__block {
     border-radius: 0px;
     padding: 0px;
 
-    -webkit-box-shadow: inset 0px 0px 63px -8px rgba(0,0,0,1);
-    -moz-box-shadow: inset 0px 0px 63px -8px rgba(0,0,0,1);
-    box-shadow: inset 0px 0px 63px -8px rgba(0,0,0,1);
+    -webkit-box-shadow: inset 0px 0px 63px -8px rgba(0, 0, 0, 1);
+    -moz-box-shadow: inset 0px 0px 63px -8px rgba(0, 0, 0, 1);
+    box-shadow: inset 0px 0px 63px -8px rgba(0, 0, 0, 1);
 
-    border: 8px solid #115c4f ;
+    border: 8px solid #115c4f;
     border-radius: 12px;
     max-height: fit-content;
+}
+
+.about__container div:has(.about__block):first-child {
     grid-row-start: span 2;
 }
 
-.about__block:first-child:hover{
-    margin-top: 0px;
-    border: 8px solid #115c4f ;
+.about__container div:has(.about__block):first-child .about__block:hover {
+    box-shadow: none;
+    transform: translateY(0px);
 }
 
+@media only screen and (max-width: 1600px) {
+    .about__container div:has(.about__block):first-child {
+        grid-row-start: span 1;
+    }
+}
 
-.about__block p{
+@media only screen and (max-width: 780px) {
+.about__container {
+    grid-template-columns: 1fr;
+    padding:40px;
+}
+}
+
+.about__block p {
     font-family: "Sofia Sans", sans-serif;
     margin-top: 20px;
     margin-left: 4px;
 }
 
-.about__block img{
+.about__block img {
     width: 100%;
-    height: 100%;
 }
 
-.about__block h1{
+.about__block h1 {
     font-family: "Great Vibes", serif;
     font-weight: bold;
     font-size: 2em;
     margin-left: 10px;
 }
 
-.about__block h2{
+.about__block h2 {
     margin-left: 10px;
     font-family: "Great Vibes", serif;
     font-weight: bold;
     font-size: 1.7em;
-    color:black;
+    color: black;
 }

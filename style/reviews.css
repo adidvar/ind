@@ -24,8 +24,6 @@
     padding: 6px 30px;
 }
 
-
-
 .reviews__list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
