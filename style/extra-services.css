@@ -5,12 +5,14 @@
   }
 
   #extra-services>div>h2 {
+    margin-left: 20px;
     padding-bottom: 8px;
     font-family: "Sofia Sans", sans-serif;
     font-size: 2.4em;
   }
 
   #extra-services>div>p {
+    margin-left: 20px;
     font-family: "Sofia Sans", sans-serif;
     font-size: 1.2em;
     padding-bottom: 10px;
@@ -25,17 +27,32 @@
     row-gap: 40px;
   }
 
-@media only screen and (max-width: 850px) {
-  .extra-services__wrap {
-    grid-template-columns: 1fr;
-    padding: 40px;
+  @media only screen and (max-width: 850px) {
+    .extra-services__wrap {
+      grid-template-columns: 1fr;
+      padding: 40px;
+    }
   }
-}
 
   .extra-service__card {
-    border-radius: 40px;
-    background: #b6decc;
+    color: white;
     height: 100%;
+    background: transparent;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  #extra-services div:has(.extra-service__card):nth-child(3n)>.extra-service__card>.extra-service__card__text-block {
+    background: #2f2927;
+  }
+
+  #extra-services div:has(.extra-service__card):nth-child(3n + 1)>.extra-service__card>.extra-service__card__text-block {
+    background: #593939;
+  }
+  #extra-services div:has(.extra-service__card):nth-child(3n + 2)>.extra-service__card>.extra-service__card__text-block {
+    background: #293c33;
   }
 
   .extra-service__card {
@@ -60,8 +77,13 @@
 
   .extra-service__card__text-block {
     padding: 20px;
-    padding-left: 35px;
     padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: fit-container;
+    border-radius: 0 0 40px 40px;
+    flex-grow: 1;
   }
 
   .extra-service__card__text-block>h3 {
@@ -89,11 +111,12 @@
     font-size: 1.5em;
     font-weight: bold;
     padding: 10px 40px;
-    margin-left: 10px;
     color: black;
-    background: #ffffe1;
-    border-radius: 14px;
+    background: #c7b9ae;
+    border-radius: 20px;
     margin-bottom: 8px;
     border: 0px;
-    border-bottom: 6px solid #dbdbc1;
+    border-bottom: 6px solid #93867d;
+    width: 100%;
+    margin-top: auto;
   }

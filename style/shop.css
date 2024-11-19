@@ -1,104 +1,100 @@
 #shop {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 50px; 
-    color: #E4C16F;
-    border-radius: 10px;
-  }
-  
-  #shop h2 {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #6FC3DF;
-    padding: 10px;
-  }
-  
-  .container {
-      width: 90%;
-      margin: 0 auto;
-      max-width: 30%;
-  }
-  
-  .services__list {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .service {
-    text-align: center;
-    margin: 20px;
-  }
-  
-  #shop {
-    background: rgba(189, 195, 199, 0.7);
-    padding: 80px 0;
-    text-align: center;
-    color: #fff;
+  background-image: url("../img/witch2.jpg");
+  border-top: 12px solid #f7f4bc;
+  border-bottom: 8px solid #f7f4bc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  padding-bottom: 120px;
 }
 
+#shop>div>h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 2.4em;
+  margin: 16px;
+  color: white;
+}
+
+.shop__wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 40px;
+  row-gap: 40px;
+}
+
+.services__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service {
+  text-align: center;
+  margin: 20px;
+}
 
 .shop__header {
   font-family: "Great Vibes", serif;
-    font-size: 2em;
-    color: white;
-    background-color: #8f67bf;
-    border-radius: 16px;
-    position: relative;
-    top: -38px;
-    left: -40px;
-    border: 4px solid  #c7a2f5;
-    height: min-content;
-    width: 20%;
-    padding: 6px 30px;
+  font-size: 2em;
+  color: white;
+  background-color: #8f67bf;
+  border-radius: 16px;
+  position: relative;
+  top: -38px;
+  left: -40px;
+  border: 4px solid #c7a2f5;
+  height: min-content;
+  width: 20%;
+  padding: 6px 30px;
 }
 
 .shop__items {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 30px;
-    padding: 0 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 0 15px;
 }
 
 .shop__item {
-    background: #fff;
-    border-radius: 15px;
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .shop__item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 .shop__content {
-    padding: 20px;
-    position: relative;
-    z-index: 2;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
 }
 
 .shop__image {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
 }
 
 .shop__image:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 #shop h3 {
-    font-family: "Great Vibes", serif;
-    font-size: 1.8rem;
-    color: #2c3e50;
-    margin: 15px 0;
-    transition: color 0.3s ease;
+  font-family: "Great Vibes", serif;
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin: 15px 0;
+  transition: color 0.3s ease;
 }
 
 #shop h3:hover {
-    color: #f39c12;
+  color: #f39c12;
 }
 
 #shop .shop__content {
@@ -122,12 +118,11 @@
 }
 
 @media (max-width: 768px) {
-    .shop__header {
-        font-size: 2.5rem;
-    }
+  .shop__header {
+    font-size: 2.5rem;
+  }
 
-    .shop__item {
-        margin: 0 auto;
-    }
+  .shop__item {
+    margin: 0 auto;
+  }
 }
-
