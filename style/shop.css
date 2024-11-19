@@ -121,11 +121,6 @@
   margin-top: auto;
 }
 
-.btn:hover {
-    background-color: #1abc9c;
-    transform: translateY(-5px);
-}
-
 @media (max-width: 768px) {
     .shop__header {
         font-size: 2.5rem;

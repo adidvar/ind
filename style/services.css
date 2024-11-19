@@ -15,19 +15,21 @@
   grid-template-rows: repeat(6, auto);
   column-gap: 40px;
   row-gap: 40px;
+  padding: 20px;
+  padding-bottom: 30px;
 }
 
 @media only screen and (max-width: 800px) {
   .servicer__wrap {
     grid-template-columns: repeat(2, 1fr);
-    padding:40px;
+    padding: 40px;
   }
 }
 
 @media only screen and (max-width: 576px) {
   .servicer__wrap {
     grid-template-columns: repeat(1, 1fr);
-    padding:40px;
+    padding: 40px;
   }
 }
 

@@ -5,6 +5,7 @@
 
 *:has(.move-wrapper) {
     position: relative;
+    overflow-x: hidden;
 }
 
 .width-wrapper {
