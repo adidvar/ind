@@ -1,21 +1,21 @@
 #shop {
-    background: linear-gradient(to bottom, #fff0f5, #fde4e1);
-    padding: 80px 15px;
-    text-align: center;
+    background: #e0f7e5;
+    padding: 0px 15px 100px 20px;
     font-family: 'Arial', sans-serif;
 }
+
 
 #shop>div>h2 {
     margin-left: 20px;
     padding-bottom: 8px;
     font-family: "Sofia Sans", sans-serif;
     font-size: 2.4em;
+    text-align: left; /* Додаткове вирівнювання заголовка */
 }
 
 #shop h2 {
     font-size: 2rem;
     color: #333;
-    margin-bottom: 40px;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1px;
@@ -23,10 +23,22 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.shop-title::first-letter {
+    color: #2c3e50; /* Темно-синій колір для першої літери */
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.shop-title::first-letter {
+    color: #e67e22; /* Теплий оранжевий для першої літери */
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+
 #shop .shop__wrap {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 40px; /* Збільшена відстань між картками */
     margin-top: 30px;
     max-width: 1200px;
     margin-left: auto;
@@ -35,7 +47,7 @@
 
 #shop .shop__content {
     background: #fff;
-    border-radius: 12px;
+    border-radius: 10%; /* Заокруглені картки на 40% */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -43,10 +55,12 @@
     padding: 25px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center; /* Центрування по вертикалі */
+    align-items: center; /* Центрування по горизонталі */
     height: 550px;
     max-width: 100%;
     font-family: 'Arial', sans-serif;
+    text-align: center; /* Вирівнювання тексту по центру */
 }
 
 #shop .shop__content:hover {
@@ -91,7 +105,7 @@
 }
 
 .btng {
-    background-color: #0C907E;
+    background-color: #b33a3a; /* Бордовий колір */
     color: #fff;
     border: none;
     padding: 12px 25px;
@@ -107,14 +121,14 @@
 }
 
 .btng:hover {
-    background-color: #087960;
+    background-color: #992d2d; /* Трохи темніший бордовий */
     transform: translateY(-2px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
 .btng:focus {
     outline: none;
-    box-shadow: 0 0 0 4px rgba(0, 145, 125, 0.6);
+    box-shadow: 0 0 0 4px rgba(179, 58, 58, 0.6);
 }
 
 .old-price {
@@ -135,14 +149,16 @@
     font-size: 3rem;
     font-weight: 700;
     color: #2c3e50;
-    text-align: left;
+    text-align: left; /* Ліве вирівнювання */
     position: relative;
     margin: 40px 0;
     padding-left: 30px;
-    border-left: 4px solid #e74c3c;
+    border-left: 4px solid #e74c3c; /* Червона лінія */
     letter-spacing: 2px;
     text-transform: uppercase;
     z-index: 1;
+    display: inline-block; /* Відповідає ширині тексту */
+    
 }
 
 .shop-title:hover {
@@ -160,7 +176,15 @@
     width: 100%;
     height: 2px;
     background-color: #e74c3c;
+    max-width: calc(100% - 30px);
 }
+
+.shop-title span:first-letter {
+    color: #e74c3c; /* Інший колір для першої літери */
+    font-size: 3.5rem; /* Трохи більший розмір */
+}
+
+
 
 @media (max-width: 1024px) {
     #shop h2 {
@@ -169,7 +193,7 @@
 
     #shop .shop__wrap {
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+        gap: 25px; /* Збільшена відстань між картками */
     }
 
     #shop .shop__content {
@@ -184,7 +208,7 @@
 
     #shop .shop__wrap {
         grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
+        gap: 20px; /* Збільшена відстань між картками */
     }
 
     .btng {
@@ -203,7 +227,7 @@
 
     #shop .shop__wrap {
         grid-template-columns: 1fr;
-        gap: 10px;
+        gap: 15px; /* Збільшена відстань між картками */
     }
 
     #shop p {
