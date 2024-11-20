@@ -1,0 +1,77 @@
+#gallery {
+    background-color: #1c1c1c; /* Темний фон для контрасту */
+    color: #f4f4f4; /* Світлий текст */
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Щоб приховати зайві елементи */
+}
+
+#gallery h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #f4f4f4;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    position: relative;
+    display: inline-block;
+}
+
+#gallery h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #e63946; /* Акцентний колір */
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.gallery-carousel {
+    display: flex;
+    gap: 20px; /* Простір між слайдами */
+    overflow: hidden;
+    position: relative;
+    width: 90%; /* Трохи зменшити ширину */
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(124, 123, 123, 0.5); /* Тінь для додання об'єму */
+    background: linear-gradient(135deg, #2a2a2a, #1c1c1c); /* Додатковий градієнт */
+}
+
+.slide {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide img {
+    width: 100%; /* Використання всієї ширини слайда */
+    height: auto; /* Автоматична висота для пропорцій */
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(218, 210, 210, 0.3);
+    transform: scale(0.95); /* Початкове зменшення для ефекту */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+#gallery::before, #gallery::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 150px;
+    background: linear-gradient(to right, #7ebace, transparent);
+    z-index: 10;
+}
+
+#gallery::before {
+    left: 0;
+}
+
+#gallery::after {
+    right: 0;
+}
