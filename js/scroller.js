@@ -23,3 +23,17 @@ addEventListener("scroll", (event) => {
     });
 
 });
+
+
+const slides = document.querySelectorAll('.slide');
+let currentIndex = 0;
+
+function autoScroll() {
+    currentIndex = (currentIndex + 1) % slides.length;
+
+    slides.forEach((slide, index) => {
+        slide.style.transform = `translateX(-${currentIndex * 100}%)`;
+    });
+}
+
+setInterval(autoScroll, 3000);

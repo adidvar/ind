@@ -39,6 +39,7 @@
 .about__container div:has(.about__block):first-child .about__block {
     border-radius: 0px;
     padding: 0px;
+    background-color: #115c4f;
 
     -webkit-box-shadow: inset 0px 0px 63px -8px rgba(0, 0, 0, 1);
     -moz-box-shadow: inset 0px 0px 63px -8px rgba(0, 0, 0, 1);

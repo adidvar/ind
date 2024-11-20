@@ -1,58 +1,46 @@
 #shop {
     background: #e0f7e5;
-    padding: 80px 15px;
-    text-align: center;
+    padding: 0px 15px 100px 20px;
     font-family: 'Arial', sans-serif;
 }
 
-#shop>div>h2 {
-    margin-left: 20px;
-    padding-bottom: 8px;
+.shop-title {
+    margin-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 10px;
     font-family: "Sofia Sans", sans-serif;
     font-size: 2.4em;
-}
-
-#shop h2 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 40px;
-    text-transform: uppercase;
+    text-align: left; /* Додаткове вир////////я заголовка */
+    letter-spacing: 2px;
+    color:black;
     font-weight: bold;
-    letter-spacing: 1px;
-    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
-    font-family: 'Roboto', sans-serif;
 }
 
 #shop .shop__wrap {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin-top: 30px;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+
+    column-gap: 40px;
+    row-gap: 40px;
+    padding: 20px;
+    padding-bottom: 30px;
 }
 
 #shop .shop__content {
     background: white;
+    padding: 30px;
     border-radius: 40px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-    padding: 25px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 550px;
-    max-width: 100%;
-    font-family: 'Arial', sans-serif;
+    justify-content: center; /* Центрування по вертикалі */
+    align-items: center; /* Центрування по горизонталі */
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #shop .shop__content:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
-    transform: scale(-1, 1);
+    transform: translateY(-10px);
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.2);
 }
 
 #shop .shop__image-wrapper {
@@ -62,20 +50,26 @@
     margin-bottom: 25px;
 }
 
+#shop p{
+    margin-bottom: 20px;
+}
+
 #shop .shop__image {
     width: 100%;
     height: absolute;
     object-fit: cover;
-    transition: transform 0.4s ease;
+    transition: transform 0.4s ease 0.1s, filter 0.4s ease 0.1s;
+    filter: brightness(0.95) saturate(0.8);
 }
 
-#shop .shop__image-wrapper:hover .shop__image {
+#shop .shop__content:hover .shop__image {
+    filter: brightness(1) saturate(1);
     transform: scale(1.1);
 }
 
 #shop h3 {
     font-size: 1.3rem;
-    color: #333;
+    color:black;
     margin: 15px 0;
     text-transform: uppercase;
     font-weight: bold;
@@ -83,20 +77,13 @@
     font-family: "Sofia Sans", sans-serif;
 }
 
-#shop p {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 20px;
-    font-style: italic;
-    font-family: "Sofia Sans", sans-serif;
-}
-
 .btng {
-    background-color: #36362b;
+    font-family: "Sofia Sans", sans-serif;
+    background-color: #b33a3a; /* Бордовий колір */
     color: #fff;
     border: none;
-    padding: 12px 25px;
-    font-size: 1rem;
+    padding: 15px 30px;
+    font-size: 1.1rem;
     border-radius: 25px;
     cursor: pointer;
     font-weight: bold;
@@ -104,64 +91,36 @@
     transition: background-color 0.3s ease, transform 0.3s ease;
     margin-top: auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    font-family: 'Arial', sans-serif;
 }
 
 .btng:hover {
-    background-color: #087960;
+    background-color: #992d2d; /* Трохи темніший бордовий */
     transform: translateY(-2px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
 .btng:focus {
     outline: none;
-    box-shadow: 0 0 0 4px rgba(0, 145, 125, 0.6);
+    box-shadow: 0 0 0 4px rgba(179, 58, 58, 0.6);
 }
 
 .old-price {
+    font-family: "Sofia Sans", sans-serif;
     text-decoration: line-through;
+    font-style: italic;
+    font-weight: 400;
     color: #999;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-right: 10px;
 }
 
 .new-price {
+    font-family: "Sofia Sans", sans-serif;
     color: #e74c3c;
-    font-size: 1.4rem;
-    font-weight: bold;
+    font-weight: 400;
+    font-size: 1.3rem;
 }
 
-.shop-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem;
-    font-weight: 700;
-    color: #2c3e50;
-    text-align: left;
-    position: relative;
-    margin: 40px 0;
-    padding-left: 30px;
-    border-left: 4px solid #e74c3c;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    z-index: 1;
-}
-
-.shop-title:hover {
-    color: #e74c3c;
-    border-left: 4px solid #34495e;
-    transform: scale(1.05);
-    transition: all 0.3s ease;
-}
-
-.shop-title::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #e74c3c;
-}
 
 @media (max-width: 1024px) {
     #shop h2 {
@@ -170,7 +129,7 @@
 
     #shop .shop__wrap {
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+        gap: 25px; /* Збільшена відстань між картками */
     }
 
     #shop .shop__content {
@@ -185,7 +144,7 @@
 
     #shop .shop__wrap {
         grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
+        gap: 20px; /* Збільшена відстань між картками */
     }
 
     .btng {
@@ -204,7 +163,7 @@
 
     #shop .shop__wrap {
         grid-template-columns: 1fr;
-        gap: 10px;
+        gap: 15px; /* Збільшена відстань між картками */
     }
 
     #shop p {

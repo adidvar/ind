@@ -1,17 +1,19 @@
 #gallery {
-    background-color: #1c1c1c; /* Темний фон для контрасту */
-    color: #f4f4f4; /* Світлий текст */
+    background-color: #e0f7e5;
+    color: #333333;
     padding: 80px 20px;
     text-align: center;
     position: relative;
-    overflow: hidden; /* Щоб приховати зайві елементи */
+    overflow: hidden;
+    background: linear-gradient(135deg, #e0f7e5, #cce7f5);
+    font-family: 'Merriweather', serif;
 }
 
 #gallery h2 {
     font-size: 3rem;
     margin-bottom: 40px;
-    color: #f4f4f4;
-    font-weight: bold;
+    color: #2c3e50;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 3px;
     position: relative;
@@ -23,40 +25,64 @@
     display: block;
     width: 60px;
     height: 4px;
-    background: #e63946; /* Акцентний колір */
+    background: #4da8da;
     margin: 10px auto 0;
     border-radius: 2px;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.7;
+    }
 }
 
 .gallery-carousel {
     display: flex;
-    gap: 20px; /* Простір між слайдами */
+    gap: 0;
     overflow: hidden;
     position: relative;
-    width: 90%; /* Трохи зменшити ширину */
+    width: 100%;
     max-width: 1200px;
+    height: 500px;
     margin: 0 auto;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(124, 123, 123, 0.5); /* Тінь для додання об'єму */
-    background: linear-gradient(135deg, #2a2a2a, #1c1c1c); /* Додатковий градієнт */
+    box-shadow: 0 15px 30px rgba(100, 150, 200, 0.3);
+    background: linear-gradient(135deg, #d9f0f7, #e0f7e5);
+    border: 3px solid #4da8da;
 }
 
 .slide {
-    min-width: 100%;
-    transition: transform 0.5s ease-in-out;
+    flex: 0 0 50%;
+    box-sizing: border-box;
+    padding: 10px;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    position: relative;
 }
 
 .slide img {
-    width: 100%; /* Використання всієї ширини слайда */
-    height: auto; /* Автоматична висота для пропорцій */
-    max-height: 500px;
+    width: 100%;
+    height: 100%;
+    max-height: 480px;
     object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 8px 15px rgba(218, 210, 210, 0.3);
-    transform: scale(0.95); /* Початкове зменшення для ефекту */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(50, 150, 200, 0.3);
+    transform: scale(0.95);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    filter: grayscale(10%);
 }
 
+.slide img:hover {
+    transform: scale(1);
+    box-shadow: 0 12px 25px rgba(30, 130, 180, 0.4);
+    filter: grayscale(0);
+}
 
 #gallery::before, #gallery::after {
     content: '';
@@ -64,7 +90,6 @@
     top: 0;
     bottom: 0;
     width: 150px;
-    background: linear-gradient(to right, #7ebace, transparent);
     z-index: 10;
 }
 
@@ -74,4 +99,31 @@
 
 #gallery::after {
     right: 0;
+}
+
+.gallery-navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 20;
+}
+
+.gallery-navigation button {
+    background-color: #4da8da;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(30, 130, 180, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-navigation button:hover {
+    transform: scale(1.2);
+    background-color: #35799e;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
