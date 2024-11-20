@@ -1,5 +1,5 @@
 #shop {
-    background: linear-gradient(to bottom, #fff0f5, #fde4e1);
+    background: #e0f7e5;
     padding: 80px 15px;
     text-align: center;
     font-family: 'Arial', sans-serif;
@@ -34,8 +34,8 @@
 }
 
 #shop .shop__content {
-    background: #fff;
-    border-radius: 12px;
+    background: white;
+    border-radius: 40px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -52,6 +52,7 @@
 #shop .shop__content:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    transform: scale(-1, 1);
 }
 
 #shop .shop__image-wrapper {
@@ -91,7 +92,7 @@
 }
 
 .btng {
-    background-color: #0C907E;
+    background-color: #36362b;
     color: #fff;
     border: none;
     padding: 12px 25px;
