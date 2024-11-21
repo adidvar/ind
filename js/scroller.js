@@ -10,8 +10,6 @@ addEventListener("scroll", (event) => {
 
         wpos = (rect.width/2 +  rect.x) /mwidth;
 
-
-
         way = true;
         if(Math.random() > wpos)
             way=false;
