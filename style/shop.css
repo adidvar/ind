@@ -18,6 +18,14 @@
     font-weight: bold;
 }
 
+.shop-subtitle {
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: "Sofia Sans", sans-serif;
+    font-size: 1.1em;
+    color: black;
+}
+
 #shop .shop__wrap {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -44,7 +52,8 @@
 
 #shop .shop__content {
     height: 100%;
-    background: linear-gradient(130deg, rgb(121, 111, 108) 0%, rgb(29, 37, 32) 100%);
+    background: linear-gradient(130deg, rgb(211, 210, 147) 0%, rgb(29, 37, 32) 80%);
+    background: linear-gradient(130deg, rgb(139, 187, 194) 0%, rgb(58, 64, 68) 80%);
     padding: 30px;
     border-radius: 40px;
     display: flex;
@@ -58,7 +67,6 @@
 }
 
 #shop div:has(.shop__content):nth-child(odd) > .shop__content {
-    background: linear-gradient(130deg, rgb(80, 131, 99) 0%, rgb(56, 63, 68) 100%);
 }
 
 #shop .shop__content:hover {
@@ -102,20 +110,21 @@
 
 .btng {
     font-family: "Sofia Sans", sans-serif;
-    background-color: #fff5df;
+    background-color: #ffffff;
     /* Бордовий колір */
     border: none;
-    border-bottom: 6px solid #d4cfc2;
+    border-bottom: 6px solid #e7e7e7;
     color: black;
     font-weight: bold;
-    padding: 15px 30px;
+    padding: 10px 40px;
     font-size: 1.2rem;
-    border-radius: 25px;
+    border-radius: 20px;
     cursor: pointer;
     font-weight: bold;
     text-transform: uppercase;
     transition: background-color 0.3s ease, transform 0.3s ease;
     margin-top: auto;
+    width: fit-content;
 }
 
 .btng:hover {

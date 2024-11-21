@@ -8,7 +8,13 @@ addEventListener("scroll", (event) => {
     Array.from(elements).forEach((e,i) => {
         const rect = e.getBoundingClientRect();
 
+        wpos = (rect.width/2 +  rect.x) /mwidth;
+
+
+
         way = true;
+        if(Math.random() > wpos)
+            way=false;
 
         if (rect.y + rect.height < 20 ) {
             e.style.transform = `translateX(${(way ? 1 : -1) *mwidth/4.0}px)`;

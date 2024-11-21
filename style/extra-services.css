@@ -1,5 +1,5 @@
   #extra-services {
-    background: #feffef;
+    background: #fefff5;
     padding-top: 20px;
     padding-bottom: 40px;
   }
@@ -47,17 +47,17 @@
 
   #extra-services div:has(.extra-service__card):nth-child(3n)>.extra-service__card>.extra-service__card__text-block {
     background: #3a3330;
-    background: linear-gradient(160deg, #423a37 0%, #25211f 100%);
+    background: linear-gradient(160deg, #4e4541 0%, #25211f 100%);
   }
 
   #extra-services div:has(.extra-service__card):nth-child(3n + 1)>.extra-service__card>.extra-service__card__text-block {
     background: #583939;
-    background: linear-gradient(160deg, #664343 0%, #3b2626 100%);
+    background: linear-gradient(160deg, #724b4b 0%, #3b2626 100%);
   }
 
   #extra-services div:has(.extra-service__card):nth-child(3n + 2)>.extra-service__card>.extra-service__card__text-block {
     background: #334b40;
-    background: linear-gradient(160deg, #3b574a 0%, #25362f 100%);
+    background: linear-gradient(160deg, #446455 0%, #25362f 100%);
   }
 
   .extra-service__card {
@@ -123,11 +123,11 @@
     font-weight: bold;
     padding: 10px 40px;
     color: black;
-    background: #c2b4a9;
+    background: #ffffff;
     border-radius: 20px;
-    margin-bottom: 8px;
     border: 0px;
-    border-bottom: 6px solid #92867d;
-    width: 100%;
-    margin-top: auto;
+    border-bottom: 6px solid #d3d3d3;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 8px;
   }
