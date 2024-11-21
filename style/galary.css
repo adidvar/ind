@@ -1,15 +1,19 @@
 #gallery {
     background-color: #e0f7e5;
+    border-top: 12px solid #bbe2e2;
+    border-bottom: 12px solid #bbe2e2;
     color: #333333;
-    padding: 80px 20px;
+    padding: 120px 20px;
     text-align: center;
     position: relative;
     overflow: hidden;
     background: linear-gradient(135deg, #e0f7e5, #cce7f5);
-    font-family: 'Merriweather', serif;
+    font-family: "Sofia Sans", sans-serif;
+    padding-bottom: 300px;
 }
 
 #gallery h2 {
+
     font-size: 3rem;
     margin-bottom: 40px;
     color: #2c3e50;
@@ -44,23 +48,20 @@
 
 .gallery-carousel {
     display: flex;
-    gap: 0;
+    gap:0;
     overflow: hidden;
-    position: relative;
     width: 100%;
-    max-width: 1200px;
-    height: 500px;
     margin: 0 auto;
-    border-radius: 15px;
-    box-shadow: 0 15px 30px rgba(100, 150, 200, 0.3);
-    background: linear-gradient(135deg, #d9f0f7, #e0f7e5);
-    border: 3px solid #4da8da;
+    border-radius: 40px;
+    box-shadow: 0 10px 30px rgba(150, 150, 200, 0.6);
+    background: linear-gradient(135deg, #adc5cc, #e0f7e5);
 }
 
 .slide {
     flex: 0 0 50%;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 20px;
+    padding-right: 10px;
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
     position: relative;
 }
@@ -72,7 +73,6 @@
     object-fit: cover;
     display: block;
     border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(50, 150, 200, 0.3);
     transform: scale(0.95);
     transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
     filter: grayscale(10%);

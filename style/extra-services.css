@@ -1,5 +1,5 @@
   #extra-services {
-    background: #ffffe1;
+    background: #feffef;
     padding-top: 20px;
     padding-bottom: 40px;
   }
@@ -46,15 +46,18 @@
 
 
   #extra-services div:has(.extra-service__card):nth-child(3n)>.extra-service__card>.extra-service__card__text-block {
-    background: #2f2927;
+    background: #3a3330;
+    background: linear-gradient(160deg, #423a37 0%, #25211f 100%);
   }
 
   #extra-services div:has(.extra-service__card):nth-child(3n + 1)>.extra-service__card>.extra-service__card__text-block {
-    background: #593939;
+    background: #583939;
+    background: linear-gradient(160deg, #664343 0%, #3b2626 100%);
   }
 
   #extra-services div:has(.extra-service__card):nth-child(3n + 2)>.extra-service__card>.extra-service__card__text-block {
-    background: #293c33;
+    background: #334b40;
+    background: linear-gradient(160deg, #3b574a 0%, #25362f 100%);
   }
 
   .extra-service__card {
@@ -120,11 +123,11 @@
     font-weight: bold;
     padding: 10px 40px;
     color: black;
-    background: #c7b9ae;
+    background: #c2b4a9;
     border-radius: 20px;
     margin-bottom: 8px;
     border: 0px;
-    border-bottom: 6px solid #93867d;
+    border-bottom: 6px solid #92867d;
     width: 100%;
     margin-top: auto;
   }
